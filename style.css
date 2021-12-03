@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+body{
+    /* position: relative; */
+    height:100vh;
+    display: flex;
+    /* left: 59px;
+    top: -74px; */
+    justify-content: space-evenly;
+    align-items: center;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    /* background-color: #111; */
+    background-image: linear-gradient(180deg, #380036 0%, #0cbaba 100%);
+    /* background-repeat: no-repeat; */
+    background-attachment: fixed;
+    /* font-family: poppins; */
+    font-size:18px;
+    flex-wrap: wrap;
+    align-content: space-between;
+    /* overflow: hidden; */
+}
+/* .top{
+    height:100%;
+    width:100%;
+}
+.bottom{
+    height:100%;
+    width:100%;
+} */
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.nav-img{
+    width:111px;
+}
+header{
+    position: absolute;
+    width:100%;
+    top:0;
+    left:0;
+    display:flex;
+    justify-content: space-between;
+    /* background-color: brown; */
+    z-index:100;
+    overflow-x: none;
+    
+}
+.logo{
+    /* text-decoration: none;
+    font-family: 'Comfortaa', cursive;
+    color:white; */
+    padding: 12px;
+    /* font-size: xx-large;
+    font-weight: 700; */
+    /* text-transform: uppercase; */
+    /* letter-spacing: 2px;
+    top:-8px; */
+}
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin-left: 696px;
+}
+.nav li{
+    margin-left: 3px;
+}
+.nav li a{
+    position:relative;
+    /* top:30px; */
+    padding: 10px;
+    text-decoration: none;
+    color:white;
+    border-radius: 20px;
+
+}
+.nav li a:hover,.nav li a.active{
+    background-color: white;
+    color:#2b1055;
+}
+.burger{
+    display:none;
+    position: relative;
+    top: 39px;
+}
+.burger div{
+    width: 27px;
+    height: 2px;
+    background-color: white;
+    margin: 3px;
+}
+/* header{
+    width: 100%;
+    padding:1px;
+    display:flex;
+    justify-content:space-between;
+    color:white;
+}
+.nav-list{
+    display:flex;
+    flex-flow : row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-list li{
+    display:inline-block;
+    padding:10px;
+    margin: 4px;
+    width:auto;
+    border-radius: 10px;
+}
+li{
+    transition: .3s ;
+    border-bottom: 2px solid transparent;
+}
+li:hover{
+
+    background: white;
+    color:black;
+    border-bottom: 2px solid black;
+}
+.sign:hover{
+    color:brown;
+}
+.log:hover{
+    color:brown;
+} */
+.title{
+    width: 100%;
+    padding:1px;
+    position: relative;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    /* background:skyblue; */
+    color:white;
+    top:106px;
+
+}
+.container{
+    /* min-width:700px; */
+    min-width:582px;
+    min-height:350px;
+    border-radius: 200px;
+    position:relative;
+    transition:1.5s ease-in-out;
+    transform-style: preserve-3d;
+    top:25vh;
+    margin: 0px 0px 67px 0px;
+}
+.side{
+    position:absolute;
+    text-align:center;
+    width:100%;
+    height:100%;
+    padding:20px 50px;
+    color:#fff;
+    transform-style: preserve-3d;
+    transition: transform-style 0.3s ease;
+    backface-visibility: hidden;
+    border-radius: 20px;
+}
+.front{
+    z-index:2;
+    background-size: 100vh;
+    background-size: cover;
+    /* background-image: url(./pexels-swapnil-sharma-3274210.jpg); */
+    background:rgba(255,255,255,0.1);
+    /* background: translucent; */
+    /* border:2px solid rgba(255,255,255,0.1); */
+}
+.front:after{
+    filter: blur(30px);
+    
+}
+.back{
+    background-color: #333;
+    transform:rotateY(180deg);
+    z-index:0;
+    padding-top:10px;
+    background-image: url(./pexels-rok-romih-3367931.jpg);
+}
+.content{
+    transform:translateZ(70px) scale(0.8);
+    line-height:1.5em;
+    backface-visibility: hidden;
+}
+.left h1{
+    position:relative;
+    margin-top: 30px;
+    left: 27px;
+}
+.right h1{
+    position:relative;
+    margin-top: 30px;
+    right: 30px;
+}
+.content p{
+    margin-top: -15px;
+    line-height: 2em;
+}
+.content img{
+    width: 226px;
+}
+.content img:hover{
+    transform: scale(1.2);
+    transition: transform 500ms ease;
+}
+.revleft{
+    position:absolute;
+    left:14%;
+}
+.revright{
+    position: absolute;
+    left:14%;
+}
+.content div{
+    display: inline-block;
+}
+.content h1::before{
+    content:"";
+    position:absolute;
+    bottom: -20px;
+    height:5px;
+    background-color: #0f0;
+    width:100px;
+    left:50%;
+    transform: translateX(-50%);
+}
+.container:hover{
+    transform:rotateY(180deg)
+}
+@media only screen and (max-width:566px){
+    .nav{
+        flex-direction:column;
+        align-items: flex-end;
+        transition: all 0.9s ease-in-out;
+    }
+    .navbar{
+        /* flex-wrap: wrap;
+        width:100%;
+        justify-content: center; */
+
+        /* height:100px; */
+        flex-direction: column;
+    }
+    .nav li a{
+        top: -19px;
+    /* padding: 14px; */
+        display: block;
+        margin-bottom: 8px;
+    }
+    .respnav{
+        opacity:0;
+    }
+    .logo{
+        width:88px;
+    }
+    .burger{
+        display: block;
+        position: absolute;
+        left: 82vw;
+        top:36px;
+    }
+    .burger:hover{
+        cursor: pointer;
+    }
+    
+    
+    
+}
+@media only screen and (max-width:1024px) {
+    .left h1{
+        left:0px;
+    }
+    .right h1{
+        right:0px;
+    }
+    .revleft{
+        /* bottom: 34%; */
+    }
+    .container{
+        top: 25vh;
+    }
+}
+@media only screen and (max-width:450px) {
+    .container{
+        /* min-width: 334px; */
+        min-width: 78%;
+        min-height: 432px;
+    }
+    .content div{
+        display: block;
+        position: relative;
+        /* left: 124%; */
+    }
+    .content img{
+        width:164px;
+    }
+    .revleft{
+        left:26%
+    }
+    .revright{
+        left:26%;
+    }
+
+
+}
+@media only screen and (max-width:566px){
+    .nav{
+        flex-direction:column;
+        align-items: flex-end;
+        transition: all 0.9s ease-in-out;
+    }
+    .navbar{
+        /* flex-wrap: wrap;
+        width:100%;
+        justify-content: center; */
+
+        /* height:100px; */
+        flex-direction: column;
+    }
+    .nav li a{
+        top: -19px;
+    /* padding: 14px; */
+        display: block;
+        margin-bottom: 8px;
+    }
+    .respnav{
+        opacity:0;
+    }
+    .logo{
+        width:88px;
+    }
+    .burger{
+        display: block;
+        position: absolute;
+        left: 82vw;
+        top:36px;
+    }
+    .burger:hover{
+        cursor: pointer;
+    }
+    
+    
+    
+}

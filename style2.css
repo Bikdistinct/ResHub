@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+/* .nav{
+height:9px;
+background:rgba(255,255,255,0.2)
+} */    body{
+    background-image: linear-gradient(180deg, #380036 0%, #0cbaba 100%);
+    background-attachment: fixed;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.nav-img{
+    width:111px;
+}
+header{
+    width: 100%;
+    padding:1px;
+    display:flex;
+    justify-content:space-between;
+    /* background:skyblue; */
+    color:white;
+}
+.nav-list{
+    display:flex;
+    flex-flow : row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-list li{
+    display:inline-block;
+    padding:10px;
+    margin: 4px;
+    width:auto;
+    border-radius: 10px;
+}
+li{
+    transition: .3s ;
+    border-bottom: 2px solid transparent;
+}
+li:hover{
+
+    background: white;
+    color:black;
+    border-bottom: 2px solid black;
+}
+.sign:hover{
+    color:brown;
+}
+.log:hover{
+    color:brown;
+}
+.title{
+    width: 100%;
+    padding:1px;
+    position: relative;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    /* background:skyblue; */
+    color:white;
+    top:53px;
+
+}
+.cards{
+    display:-webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display:-o-flex;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    min-height:100vh;
+    /* background-image: url(./pexels-rok-romih-3367931.jpg); */
+    background-size:cover ;
+    background-position: center center;
+    /* font-family */
+}
+.wrapper{
+    /* display:grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-gap:30px; */
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: center;
+    top: -57px;
+}
+.wrapper .box{
+    width: 274px;
+    /* width: 18%; */
+    height: 324px;
+    /* height: 33%; */
+    margin: 12px;
+    border-radius:15px;
+    transition:transform 500ms ease-out;
+    overflow: hidden;
+    color:#fff;
+    padding: 5%;
+    text-align:center;
+    /* background:rgba(255,255,255,0.2); */
+    backdrop-filter: blur(30px);
+    border:2px solid rgba(255,255,255,0.1);
+}
+.card-content{
+    padding: 1.5em;
+    background: hsl(0 0% 0% / 0.7);
+    position: absolute;
+    /* bottom: 0px; */
+    /* display: none; */
+    /* left:274px; */
+    right: 112px;
+    top: 217px;
+    border-radius:33px ;
+    transform: translateX(0px);
+    transition:transform 0.3s ease;
+}
+.card-content .box:hover{
+    transform:translateX(-159px);
+    /* transition: transform 500ms ease; */
+    /* display: block; */
+}
+.card-title{
+    width:148px;
+}
+.sub1{
+    background-image: url(./ResHubImages/ce101.jpg);
+    background-size:cover ;
+    background-position: center center;
+    /* object-fit: cover; */
+}
+.sub2{
+    background-image: url(./ResHubImages/ch101.jpg);
+    background-size:cover ;
+    background-position: center center;
+    /* object-fit: cover; */
+}
+.sub3{
+    background-image: url(./ResHubImages/cs101..jpg);
+    background-size:cover ;
+    background-position: center center;
+    /* object-fit: cover; */
+}
+.sub4{
+    background-image: url(./ResHubImages/ec101.jpg);
+    background-size:cover ;
+    background-position: center center;
+    /* object-fit: cover; */
+}
+.sub5{
+    background-image: url(./ResHubImages/ma101.jpg);
+    background-size:cover ;
+    background-position: center center;
+    /* object-fit: cover; */
+}
+
+.box img{
+    /* width:269px; */
+    width: 106%;
+    height: 101%;
+    
+}
+.box img:hover{
+    transform: scale(1.2);
+    transition:transform 900ms ease
+}
+.box h4{
+    font-size: 25px;
+    margin-top: 30px;
+    color:rgba(255,255,255,0.7)
+}
+.box p{
+    line-height:1.9;
+    color:rgba(255,255,255,0.7)
+}
+.box a{
+    border:none;
+    background:#fff;
+    padding: 15px 50px;
+    display: inline-block;
+    margin-top:20px;
+    text-decoration:none;
+    font-size:14px;
+    border-radius:50px;
+}
+.wrapper .box:before{
+    content:'';
+    background:rgba(255,255,255,0.1);
+    width:60%;
+    height:100%;
+    top:0%;
+    left:-125%;
+    transform:skew(45deg);
+    position:absolute;
+    animation-direction:left;
+    transition-duration:800ms;
+}
+.wrapper .box:hover{
+    transform: translateY(-5%);
+}
+.wrapper .box:hover:before{
+    left:150%;
+}
