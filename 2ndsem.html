@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>1st SEM</title>
+    <title>2nd SEM</title>
     <!-- <link rel="stylesheet" href="./style2.css"> -->
 </head>
 <style>
@@ -118,7 +118,7 @@
         text-align:center;
         /* background:rgba(255,255,255,0.2); */
         backdrop-filter: blur(30px);
-        border:2px solid rgba(255,255,255,0.1);
+        border:2px none rgba(255,255,255,0.1);
     }
     .card-content{
         padding: 1.1em;
@@ -217,8 +217,17 @@
     .wrapper .box:hover{
         transform: translateY(-5%);
     }
+    .wrapper .card-content:hover{
+        cursor: pointer;
+        
+    }
     .wrapper .box:hover:before{
         left:150%;
+    }
+    @media only screen and (max-width:768px){
+        .wrapper{
+           top:68px; 
+        }
     }
 </style>
 <body>

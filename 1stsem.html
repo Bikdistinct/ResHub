@@ -122,7 +122,7 @@
         /* background:rgba(255,255,255,0.2); */
         backdrop-filter: blur(30px);
         /* border:2px solid rgba(255,255,255,0.1); */
-        border:2px groove rgba(255,255,255,0.05);
+        border:2px none rgba(255,255,255,0.05);
     }
     .card-content{
         padding: 1.1em;
@@ -220,10 +220,18 @@
     }
     .wrapper .box:hover{
         transform: translateY(-5%);
+    }
+    .wrapper .card-content:hover{
         cursor: pointer;
+        
     }
     .wrapper .box:hover:before{
         left:150%;
+    }
+    @media only screen and (max-width:768px){
+        .wrapper{
+           top:68px; 
+        }
     }
 </style>
 <body>
@@ -249,8 +257,8 @@
     <div class="cards">
         <div class="wrapper">
             <div class="box sub1">
-                <a href="www.google.com">
-                    <div class="card-content">
+                <a href="https://drive.google.com/drive/folders/1sicrkJUSepQ0S-N6p7O0xwrIcAKtHvX6?usp=sharing">
+                <div class="card-content">
                         <h2 class="card-title"> CE 101</h2>
     
                     </div>

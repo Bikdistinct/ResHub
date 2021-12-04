@@ -118,17 +118,17 @@
         text-align:center;
         /* background:rgba(255,255,255,0.2); */
         backdrop-filter: blur(30px);
-        border:2px solid rgba(255,255,255,0.1);
+        border:2px none rgba(255,255,255,0.1);
     }
     .card-content{
-        padding: 1.5em;
+        padding: 1.1em;
         background: hsl(0 0% 0% / 0.7);
         position: absolute;
         /* bottom: 0px; */
         /* display: none; */
         /* left:274px; */
         /* right: 112px;  for 5subjects */
-        right: 65px;/* for 6subjects */
+        right: 112px;/* for 6subjects */
         top: 217px;
         border-radius:33px ;
         transform: translateX(0px);
@@ -140,7 +140,7 @@
         /* display: block; */
     }
     .card-title{
-        width:148px;
+        width:98px;
     }
     .sub1{
         background-image: url(./ResHubImages/6thSemImg/EC307.jpg);
@@ -223,8 +223,17 @@
     .wrapper .box:hover{
         transform: translateY(-5%);
     }
+    .wrapper .card-content:hover{
+        cursor: pointer;
+        
+    }
     .wrapper .box:hover:before{
         left:150%;
+    }
+    @media only screen and (max-width:768px){
+        .wrapper{
+           top:68px; 
+        }
     }
 </style>
 <body>
@@ -251,7 +260,7 @@
         <div class="wrapper">
             <div class="box sub1">
                 <div class="card-content">
-                    <h2 class="card-title">EC307</h2>
+                    <h2 class="card-title">Ec 307</h2>
 
                 </div>
                 <!-- <img src="./folder.png" alt="folder"> -->
@@ -264,7 +273,7 @@
 
             <div class="box sub2">
                 <div class="card-content">
-                    <h2 class="card-title">EC 308</h2>
+                    <h2 class="card-title">Ec 308</h2>
 
                 </div>
                 <!-- <img src="./folder.png" alt="folder"> -->
@@ -275,7 +284,7 @@
 
             <div class="box sub3">
                 <div class="card-content">
-                    <h2 class="card-title">EC 309</h2>
+                    <h2 class="card-title">Ec 309</h2>
 
                 </div>
                 <!-- <img src="./folder.png" alt="folder"> -->
@@ -286,7 +295,7 @@
 
             <div class="box sub4">
                 <div class="card-content">
-                    <h2 class="card-title">EC 310</h2>
+                    <h2 class="card-title">Ec 310</h2>
 
                 </div>
                 <!-- <img src="./folder.png" alt="folder"> -->

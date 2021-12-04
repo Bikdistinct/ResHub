@@ -13,7 +13,9 @@ body{
     top: -74px; */
     justify-content: space-evenly;
     align-items: center;
-    perspective: 1000px;
+    /* perspective: 1000px; */
+    perspective: 958vw;
+    perspective-origin: center;
     transform-style: preserve-3d;
     /* background-color: #111; */
     background-image: linear-gradient(180deg, #380036 0%, #0cbaba 100%);
@@ -33,7 +35,7 @@ body{
     height:100%;
     width:100%;
 } */
-a{
+/* a{
     text-decoration: none;
     color: inherit;
 }
@@ -46,23 +48,23 @@ header{
     top:0;
     left:0;
     display:flex;
-    justify-content: space-between;
+    justify-content: space-between; */
     /* background-color: brown; */
-    z-index:100;
+    /* z-index:100;
     overflow-x: none;
     
 }
-.logo{
+.logo{ */
     /* text-decoration: none;
     font-family: 'Comfortaa', cursive;
     color:white; */
-    padding: 12px;
+    /* padding: 12px;  need */
     /* font-size: xx-large;
     font-weight: 700; */
     /* text-transform: uppercase; */
     /* letter-spacing: 2px;
     top:-8px; */
-}
+/* }
 .nav{
     display: flex;
     justify-content: center;
@@ -74,9 +76,9 @@ header{
     margin-left: 3px;
 }
 .nav li a{
-    position:relative;
+    position:relative; */
     /* top:30px; */
-    padding: 10px;
+    /* padding: 10px;
     text-decoration: none;
     color:white;
     border-radius: 20px;
@@ -96,6 +98,102 @@ header{
     height: 2px;
     background-color: white;
     margin: 3px;
+} */
+
+.nav {
+    height: 50px;
+    width: 100%;
+    /* background-color: #4d4d4d; */
+    background: transparent;
+    position: relative;
+}
+
+.nav > .nav-header {
+display: inline;
+}
+
+.nav > .nav-header > .nav-img {
+display: inline-block;
+font-size: 22px;
+color: #fff;
+padding: 10px 10px 10px 10px;
+}
+
+.nav > .nav-btn {
+display: none;
+}
+
+.nav > .nav-links {
+display: inline;
+float: right;
+font-size: 18px;
+}
+
+.nav > .nav-links > a {
+display: inline-block;
+padding: 13px 10px 13px 10px;
+text-decoration: none;
+color: #efefef;
+}
+
+.nav > .nav-links > a:hover {
+background-color: rgba(0, 0, 0, 0.3);
+/* background: transparent; */
+}
+
+.nav > #nav-check {
+    display: none;
+}
+.logo{
+    width:90px;
+}
+
+@media (max-width:800px) {
+.nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 23px;
+    top: 0px;
+}
+.nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+}
+.nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+}
+.nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    /* background-color: #333; */
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 59px;
+    /* left: 0px; */
+    /* left: 578px; */
+    left: 53vh;
+}
+.nav > .nav-links > a {
+    display: block;
+    width: 100%;
+}
+.nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+}
+.nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+}
 }
 /* header{
     width: 100%;
@@ -136,6 +234,7 @@ li:hover{
 .title{
     width: 100%;
     padding:1px;
+    padding-bottom: 61px;
     position: relative;
     display:flex;
     justify-content:center;
@@ -153,7 +252,8 @@ li:hover{
     position:relative;
     transition:1.5s ease-in-out;
     transform-style: preserve-3d;
-    top:25vh;
+    /* top:25vh; */
+    top: 20vh;
     margin: 0px 0px 67px 0px;
 }
 .side{
@@ -220,7 +320,7 @@ li:hover{
 }
 .revright{
     position: absolute;
-    left:14%;
+    /* left:14%; */
 }
 .content div{
     display: inline-block;
@@ -238,24 +338,24 @@ li:hover{
 .container:hover{
     transform:rotateY(180deg)
 }
-@media only screen and (max-width:566px){
+/* @media only screen and (max-width:566px){
     .nav{
         flex-direction:column;
         align-items: flex-end;
         transition: all 0.9s ease-in-out;
     }
-    .navbar{
+    .navbar{ */
         /* flex-wrap: wrap;
         width:100%;
         justify-content: center; */
 
         /* height:100px; */
-        flex-direction: column;
+        /* flex-direction: column;
     }
     .nav li a{
-        top: -19px;
+        top: -19px; */
     /* padding: 14px; */
-        display: block;
+        /* display: block;
         margin-bottom: 8px;
     }
     .respnav{
@@ -276,7 +376,7 @@ li:hover{
     
     
     
-}
+} */
 @media only screen and (max-width:1024px) {
     .left h1{
         left:0px;
@@ -352,4 +452,9 @@ li:hover{
     
     
     
+}
+@media only screen and (max-width:450px){
+    .title h1{
+        font-size: 2vh;
+    }
 }
